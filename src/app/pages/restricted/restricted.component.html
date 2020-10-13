@@ -1,0 +1,9 @@
+<p>restricted works!</p>
+
+<pre>access_token: {{ oAuthService.getAccessToken() }}</pre>
+<pre>expiration_time: {{ oAuthService.getAccessTokenExpiration() }}</pre>
+<pre>granted_scopes: {{ oAuthService.getGrantedScopes() | json }}</pre>
+<pre>granted_claims: {{ oAuthService.getIdentityClaims() | json }}</pre>
+<pre>user_info: {{ user | json }}</pre>
+
+<button routerLink="/">Back to home</button>
